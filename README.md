@@ -1,8 +1,21 @@
-PS-010: Evidence-Based IP Network-Type Classification
-1. Problem Statement
-Nowadays, online fraud detection systems and content platforms use IP addresses to identify the type of network from which a user is connecting. These systems attempt to determine whether an IP address belongs to a residential network, a data center, a VPN, a proxy, or a Tor exit node. However, many existing systems rely on static databases that may be outdated or inaccurate, which can lead to legitimate users being incorrectly classified as suspicious.
-The main problem is to develop an evidence-based IP network classification system that analyses publicly available network information and identifies known Tor exit nodes and hosted VPN/proxy endpoints. The system must use timestamped BGP/ASN metadata, published Tor exit node lists, hosting records, and a labelled laboratory dataset to make its decisions. If the available evidence is insufficient to determine the network type, the system must classify the IP address as “Unknown” rather than making an unsupported assumption.
-2. What We Are Going to Do
-We are going to develop a prototype that accepts an IP address as input and checks it against trusted, publicly available network information. The system will collect and compare relevant evidence, including ASN (Autonomous System Number) details, timestamped BGP metadata, published Tor exit node lists, hosting records, and known laboratory IP addresses. Based on the available evidence, it will classify each IP observation into one of three categories: Known Tor Exit, Known Hosted VPN/Proxy Endpoint, or Unknown. The system will also maintain an audit log explaining why a classification was assigned and which data sources support the decision. We will evaluate the prototype using an organiser-curated labelled dataset, including hosting IPs that are not VPN or proxy endpoints, and measure per-class precision, recall, and coverage.
-3. Expected Outcome
-The final outcome will be a working IP network-type classification prototype that produces evidence-based results, records the sources used for each decision, and handles uncertain cases safely through the “Unknown” category. We will demonstrate the system to the mentors and submit the classification results, evaluation metrics, evidence and provenance report, pseudocode, and final technical report.
+# PS-001: Android Ransomware-Like Activity Early Warning in a Controlled Lab
+
+## 1. Problem Statement
+
+Traditional signature-based antivirus tools may fail to detect new or zero-day ransomware because its malicious signature may not yet be available in their databases. On Android devices, application sandboxing also limits security software from directly inspecting other applications' memory. However, ransomware-like activity can be identified through suspicious file-system behaviour, such as rapidly opening, rewriting, and renaming multiple files. Therefore, the problem is to develop a behaviour-based early-warning detection system that monitors file operations in an explicitly accessible test directory within a controlled Android emulator or rooted laboratory device. The system should detect suspicious activity, generate an alert, and stop only the controlled test workload before further file changes occur.
+
+## 2. What the Problem Statement Is Saying
+
+The main idea is to detect ransomware-like behaviour based on what a process does rather than relying only on known malware signatures. When ransomware operates, it may rapidly modify and rename files. By monitoring these observable file-system events, the proposed system should identify suspicious patterns and provide an early warning. The project must be conducted safely in a controlled laboratory environment using harmless simulations rather than real ransomware. It must not claim to protect the entire Android device or monitor other applications on a standard, non-rooted Android device.
+
+## 3. Expectations and Key Requirements
+
+The project is expected to use one Android emulator or rooted laboratory device with documented monitoring capabilities. It must monitor a specific test directory and evaluate the detector using two benign workloads and three harmless ransomware-like simulations. The system must measure detection delay, the number of files changed before an alert, precision, and recall. Detection must be based on observable behaviour, and the system must stop only the controlled test workload responsible for the simulated suspicious activity.
+
+## 4. What We Are Going to Do
+
+We are going to develop a prototype that monitors file-system events within a designated directory in an instrumented Android laboratory environment. First, we will configure the emulator or rooted lab device and create sample test files. Next, we will run two normal workloads and three harmless ransomware-like simulations that imitate rapid file rewriting and renaming without using actual malware. The detector will analyse the observed events, identify suspicious activity based on defined behavioural thresholds, generate an alert, and stop the controlled test workload when necessary. We will record event logs and evaluate the system using detection delay, files changed before alert, precision, and recall.
+
+## 5. Expected Output
+
+The final output will be a working behaviour-based ransomware early-warning prototype demonstrated in a controlled Android lab. It will include safe simulation scripts, file-system event and telemetry logs, alert results, and an evaluation report covering detection delay, files changed before alert, precision, and recall. We will also provide documentation of the Android instrumentation and test setup, pseudocode explaining the detection logic, and a demonstration for the mentor. The project will show how suspicious file activity can be detected early without using real ransomware or making unsupported claims about device-wide protection.
