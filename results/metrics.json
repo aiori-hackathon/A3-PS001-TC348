@@ -1,0 +1,13 @@
+{
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "roc_auc": 1.0,
+  "false_positive_rate": 0.0,
+  "time_to_detect_seconds": 2.45,
+  "files_affected_before_alert": 7,
+  "total_dummy_files": 100,
+  "files_affected_percentage": "7.0%",
+  "scikit_learn_version": "1.5.3"
+}

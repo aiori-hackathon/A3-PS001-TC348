@@ -1,0 +1,8 @@
+Metric,Score
+Precision,100.00%
+Recall,100.00%
+F1-Score,100.00%
+ROC-AUC,1.0000
+False Positive Rate (FPR),0.00%
+Time-To-Detect (TTD),2.45 seconds
+Files Affected Before Alert,7 / 100 (7.0%)
