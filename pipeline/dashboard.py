@@ -98,7 +98,7 @@ def load_sample_telemetry(filename: str) -> pd.DataFrame:
 # Main Header
 st.title("🛡️ Android Ransomware-Like Activity Early Warning Lab")
 st.caption(
-    "PS-001: Defensive Controlled Lab Telemetry | Team A3-PS001-TC001: Jelish G & Swetha C | "
+    "PS-001: Defensive Controlled Lab Telemetry | Team A3-PS001-TC348: Jelish G & Swetha C | "
     "Karunya Institute of Technology and Sciences"
 )
 

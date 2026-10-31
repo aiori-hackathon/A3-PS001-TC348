@@ -9,7 +9,7 @@
 
 ## 👥 Team & Submission Information
 * **Problem Statement:** PS-001: Android Ransomware-Like Activity Early Warning in a Controlled Lab
-* **Team Code:** `A3-PS001-TC001`
+* **Team Code:** `A3-PS001-TC348`
 * **Team Members:**
   * **Jelish G** (`jelishg26@karunya.edu.in`)
   * **Swetha C** (`swethac@karunya.edu.in`)
@@ -18,9 +18,10 @@
 
 ---
 
-## 🌐 Live Demo
-* **Interactive Cloud Dashboard:** *[Deploying to Streamlit Community Cloud — Link will be updated here]*
-* **Offline Demo Fallback:** If the live link is unreachable during evaluation, complete screenshots and presentation deck deliverables are provided in the [`demo/`](demo/) directory.
+## 🌐 Live Demo & Submission Media
+* **Interactive Cloud Dashboard:** *[Deploying to Streamlit Community Cloud — share.streamlit.io]*
+* **Demo Video (YouTube):** [https://youtu.be/F5RxRr5G29Y](https://youtu.be/F5RxRr5G29Y?si=X_yDsTnj1OEgTxAp)
+* **Offline Demo Fallback:** If the live link is unreachable during evaluation, complete screenshots, deck, and presentation PDF deliverables are provided in the [`demo/`](demo/) directory.
 
 ---
 

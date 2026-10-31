@@ -1,9 +1,10 @@
 # 🛡️ PS-001: Demo & Deliverables (Offline Fallback)
 
 **Project Title:** Android Ransomware-Like Activity Early Warning in a Controlled Lab  
-**Team Code:** A3-PS001-TC001  
+**Team Code:** A3-PS001-TC348  
 **Team Members:** Jelish G & Swetha C (Karunya Institute of Technology and Sciences)  
 **Track:** Defensive Cybersecurity | Controlled Lab Experimentation  
+**Video Demo:** [https://youtu.be/F5RxRr5G29Y](https://youtu.be/F5RxRr5G29Y?si=X_yDsTnj1OEgTxAp)  
 
 ---
 
@@ -15,13 +16,16 @@ This directory contains offline evaluation deliverables and instructions to insp
 
 ## 📂 Deliverables Included
 
-1. **`PS-001_Early_Warning_Deck.pptx`**:  
-   The complete 11-slide presentation deck covering:
+1. **`A3-PS001-TC348 Presentation.pdf` & `PS-001_Early_Warning_Deck.pptx`**:  
+   The complete presentation deck covering:
    - Problem statement and threat model (Locker vs. Crypto ransomware)
    - Architecture & 5-stage pipeline design
    - Level-1 Data Flow Diagram (DFD)
    - Sliding-window heuristic and Random Forest optimization
    - Evaluation metrics and academic bibliography (HelDroid, CryptoLock, ShieldFS, MITRE ATT&CK T1471)
+
+2. **`video`**:  
+   Direct link reference to YouTube submission video: `https://youtu.be/F5RxRr5G29Y?si=X_yDsTnj1OEgTxAp`.
 
 2. **`dashboard_alert_screenshot.png`**:  
    High-resolution snapshot of the live Streamlit dashboard triggering a **Critical Early Warning Alert** during a burst attack simulation:
